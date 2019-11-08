@@ -6,7 +6,14 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.flex-container {
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 12px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #f7f7f7;
+}
+.flex {
   display: flex;
 }
 .ab {
@@ -20,6 +27,43 @@ html, body {
   bottom: 0;
   z-index: 2;
 }
+.logo {
+  width: 60px;
+  height: 60px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  }
+.freshsales_logo {
+  width: 34px;
+  height: 34px;
+  background-size: 100%;
+  display: inline-block;
+  margin-top: 5px;
+}
+#logo123:hover {
+background-color: black;
+}
+.menu-item-logo {
+  clear: both;
+  display: block;
+  float: none;
+  text-align: center;
+  width: 60px;
+}
+.navbar-primary-item-icon {
+  color:#fff;
+  width: 20px;
+  height: 40px;
+}
+.navbar-primary-item-icon{
+  fill:#999;
+}
+.navbar-primary-item-icon:hover{
+  fill:#fff;
+}
+
+
 .ac {
   background: #fff;
   border-bottom: solid 1px #f0f0f0;
@@ -41,7 +85,6 @@ html, body {
   background: #e2e2e2;
 }
 .ad {
-  background-color: #f7f7f7;
   border-bottom: solid 1px #f0f0f0;
   display: table;
   height: 46px;
@@ -57,14 +100,43 @@ html, body {
   padding-left: 20px;
   vertical-align: middle;
   width: 40%;
-  background: #e2e2e2;
+}
+.breadcrumb {
+    display: flex;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
 }
 </style>
 </head>
 <body>
 
 <div class="">
-  <div class="ab"></div>
+  <div class="ab">
+
+    <div id="logo123" class="logo">
+      <a href="#">
+        <img class="freshsales_logo"src="images\freshsales_logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-logo">
+        <a href="#">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="navbar-primary-item-icon">
+            <path d="M463.5 49.4h-48.6v32h48.6c7.4 0 13.7 6.3 13.7 13.7v84.1H35V95.1c0-7.4 6.3-13.7 13.7-13.7H107v40.9c0 8.8 7.2 16 16 16s16-7.1 16-16V81.4h.1v-32h-.1V16c0-8.8-7.2-16-16-16s-16 7.2-16 16v33.4H48.7C23.6 49.4 3.1 70 3.1 95.1v371.5c0 25.1 20.5 45.6 45.6 45.6h414.8c25.1 0 45.6-20.5 45.6-45.6V95.1c.1-25.1-20.5-45.7-45.6-45.7zm0 430.9H48.7c-7.4 0-13.7-6.3-13.7-13.7V211.2h442.2v255.5c0 7.3-6.3 13.6-13.7 13.6z"></path>
+            <path d="M129.8 294h75.9v35.5h-75.9v99.3h107.9v-32h-75.9v-35.4h75.9v-99.3H129.8zm143.8 0h76v35.5h-76v31.9h76v35.4h-76v32h107.8V262.1H273.6zm73-171.8c0 8.8 7.2 16 16 16s16-7.1 16-16V16c0-8.8-7.2-16-16-16s-16 7.2-16 16v33.4h-51.3v32h51.3v40.8zm-119.8 0c0 8.8 7.2 16 16 16s16-7.1 16-16V81.4h.1v-32h-.1V16c0-8.8-7.2-16-16-16s-16 7.2-16 16v33.4h-51.3v32h51.3v40.8z"></path>
+          </svg>
+        </span>
+      </a>
+      </div>
+
+    </div>
+  </div>
   <div class="ac">
     <div class="ac1">
       1
@@ -76,7 +148,24 @@ html, body {
 
   <div class="ad">
     <div class="ad1">
-      1
+      <!--  -->
+
+      <ul class="breadcrumb">
+        <li>
+          <span>
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="15px">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M2.5 93h281.027a.5.5 0 0 1 .5.5v46.004a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5V93.5a.5.5 0 0 1 .5-.5zM2.5 187.009h234.022a.5.5 0 0 1 .5.5v46.004a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5V187.51a.5.5 0 0 1 .5-.5zM2.5 281.018h281.027a.5.5 0 0 1 .5.5v46.004a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5v-46.004a.5.5 0 0 1 .5-.5zM2.5 375.027h163.516a.5.5 0 0 1 .5.5v46.004a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5v-46.004a.5.5 0 0 1 .5-.5z" fill="#000"></path>
+                <path d="M399.538 350.45V164.58a.5.5 0 0 1 .822-.382l110.476 92.935a.5.5 0 0 1 0 .765L400.36 350.833a.5.5 0 0 1-.822-.382z" fill="#030303" fill-rule="nonzero">
+                </path>
+              </g>
+            </svg>
+          </span>
+          <a class="" href="#">Leads</a>
+
+        </li>
+        <li></li>
+      </ul>
     </div>
     <div class="ad2">
 
